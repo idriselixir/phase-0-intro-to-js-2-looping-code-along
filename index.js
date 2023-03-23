@@ -1,34 +1,18 @@
-// Code your solutions in this file
+//code your solution in this file//for (let age = 30; age < 40; age++){
 
-const names = ["Guadalupe", "Ollie", "Aki"];
-
-
-
-const  writeCards = function (names) {
-    // create an array of messages
-    const messages = [];
-    // create a for loop
-    for (let i = 0; i < names.length; i++) {
-        // push each message into the array
-    messages.push(`Thank you, ${names[i]}, for the wonderful surprise gift!`)
+function writeCards(newArray, event) {
+    let thankYouCards = [];
+    for (let i = 0; i < newArray.length; i++) {
+      thankYouCards.push(
+        `Thank you, ${newArray[i]}, for the wonderful ${event} gift!`
+      );
     }
-     // return the array
-    return messages;
-}
-
-function countDown() {
-    let i = 10;
-    while (i >= 0) {
-        console.log (i);
-        i--;  
+    return thankYouCards;
+  }
+  function countDown(Number) {
+    while (Number > 0) {
+      console.log(Number);
+      Number -= 1;
     }
-
-}
-
-function countDown1() {
-    let i = 4;
-    while (i >= 0) {
-        console.log (i);
-        i--;   
-    }
-}
+    console.log(Number);
+  }
